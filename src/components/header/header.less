@@ -1,30 +1,12 @@
-<template>
-  <div class="header">
-    <a href="javascript:;" class="logo">Vue组件</a>
-    <ul class="menu-wrap">
-      <li class="menu-item">
-        <router-link class="menu-link" to="/">表单组件</router-link>
-      </li>
-    </ul>
-  </div>
-</template>
-
-<script type="text/ecmascript-6">
-export default{
-  name: 'Main'
-}
-</script>
-
-<style style="less">
-  .header{
-    display: flex;
-    flex: 1;
-    width: 100%;
-    align-items: center;
-    height: 80px;
-    background-color: #999;
-    align-self: center;
-  }
+.header{
+  display: flex;
+  flex: 1;
+  position: fixed;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  background-color: #999;
+  z-index: 10;
   .logo{
     width: 100px;
     display: inline-block;
@@ -45,7 +27,6 @@ export default{
     vertical-align: top;
     font-size: 0;
     height: 100%;
-
   }
   .menu-link{
     color: #fff;
@@ -61,4 +42,6 @@ export default{
   .menu-link.active{
     border-bottom: 4px solid green;
   }
-</style>
+}
+
+

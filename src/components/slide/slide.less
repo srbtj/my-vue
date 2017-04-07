@@ -1,0 +1,31 @@
+.nav-wrap{
+  position: fixed;
+  top: 80px;
+  bottom: 80px;
+  width: 100px;
+  background-color: purple;
+  z-index: 20;
+  padding-top: 10px;
+
+  .nav-item{
+    line-height: 36px;
+    .nav-link{
+      line-height: 36px;
+      display: block;
+      text-align: center;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      border-left:4px solid transparent;
+      color: #fff;
+      -webkit-transition: all .5s ease-out;
+      -moz-transition: all .5s ease-out;
+      -ms-transition: all .5s ease-out;
+      -o-transition: all .5s ease-out;
+      transition: all .5s ease-out;
+      &.active,&:hover{
+        border-left-color: orangered;
+      }
+    }
+  }
+}
